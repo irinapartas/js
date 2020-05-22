@@ -43,16 +43,23 @@
 // console.log(5n / 2n) // 2n
 
 // 3 Math
-console.log(Math.E)
-console.log(Math.PI)
+// console.log(Math.E)
+// console.log(Math.PI)
 
-console.log(Math.sqrt(25))
-console.log(Math.pow(5, 3))
-console.log(Math.abs(-42))
-console.log(Math.max(42, 12, 23, 11, 420))
-console.log(Math.min(42, 12, 23, 11, 420))
-console.log(Math.floor(4.9))
-console.log(Math.ceil(4.9))
-console.log(Math.round(4.4))
-console.log(Math.trunc(4.9))
-console.log(Math.random())
+// console.log(Math.sqrt(25))
+// console.log(Math.pow(5, 3))
+// console.log(Math.abs(-42))
+// console.log(Math.max(42, 12, 23, 11, 420))
+// console.log(Math.min(42, 12, 23, 11, 420))
+// console.log(Math.floor(4.9))
+// console.log(Math.ceil(4.9))
+// console.log(Math.round(4.4))
+// console.log(Math.trunc(4.9))
+// console.log(Math.random())
+
+// 4 Example
+function getRandomBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  
+  console.log(getRandomBetween(10, 42))
