@@ -1,48 +1,26 @@
-// const name = 'Ira'
-// const age = 19
-//
-// function getAge() {
-//   return age
-// }
+// Функции
+// Function Declaration
+function greet(name) {
+  console.log('Привет - ', name)
+}
 
-// const output = 'Привет, меня зовут ' + name + ' и мой возраст ' + age + ' лет.'
-// const output = `Привет, меня зовут ${name} и мой возраст ${age < 20 ? 'A' : 'B'} лет.`
-// const output = `
-//   <div>This is div</div>
-//   <p>this is o</p>
-// `
+// Function Expression
+const greet2 = function greet2(name) {
+  console.log('Привет 2 - ', name)
+}
 
-// console.log(output)
+// greet('Лена')
+// greet2('Лена')
 
-// const name = 'Ira'
-// console.log(name.length)
-// console.log(name.toUpperCase())
-// console.log(name.toLowerCase())
-// console.log(name.charAt(2))
-// console.log(name.indexOf('!'))
-// console.log(name.toLowerCase().startsWith('Ira'))
-// console.log(name.startsWith('Ira'))
-// console.log(name.endsWith('ra!'))
-// console.log(name.repeat(3))
-// const string = '     password      '
-// console.log(string.trim())
-// console.log(string.trimLeft())
-// console.log(string.trimRight())
+// console.log(typeof greet)
+// console.dir(greet)
 
-function logPerson(s, name, age) {
-    if (age < 0) {
-      age = 'Еще не родился'
-    }
-    return `${s[0]}${name}${s[1]}${age}${s[2]}`
+// Анонимные функции
+let counter = 0
+const interval = setInterval(function() {
+  if (counter === 5) {
+    clearInterval(interval) // clearTimeout
+  } else {
+    console.log(++counter)
   }
-  
-  const personName = 'Ira'
-  const personName2 = 'Masha'
-  const personAge = 19
-  const personAge2 = -10
-  
-  const output = logPerson`Имя: ${personName}, Возраст: ${personAge}!`
-  const output2 = logPerson`Имя: ${personName2}, Возраст: ${personAge2}!`
-  
-  console.log(output)
-  console.log(output2)
+}, 1000)
