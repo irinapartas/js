@@ -39,5 +39,20 @@
 
 // console.log(10n - 4) // error
 // console.log(parseInt(10n) - 4)
-console.log(10n - BigInt(4))
-console.log(5n / 2n) // 2n
+// console.log(10n - BigInt(4))
+// console.log(5n / 2n) // 2n
+
+// 3 Math
+console.log(Math.E)
+console.log(Math.PI)
+
+console.log(Math.sqrt(25))
+console.log(Math.pow(5, 3))
+console.log(Math.abs(-42))
+console.log(Math.max(42, 12, 23, 11, 420))
+console.log(Math.min(42, 12, 23, 11, 420))
+console.log(Math.floor(4.9))
+console.log(Math.ceil(4.9))
+console.log(Math.round(4.4))
+console.log(Math.trunc(4.9))
+console.log(Math.random())
