@@ -52,3 +52,12 @@
 // Console.log(typeof age)
 // Console.log(typeof x)
 // Console.log(null)
+
+// 5 Приоритет операторов
+const fullAge = 19
+const birthYear = 2020
+const currentYear = 2020
+
+// > < >= <=
+const isFullAge = currentYear - birthYear >= fullAge // 19 >= 20 => true
+Console.log(isFullAge)
