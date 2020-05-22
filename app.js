@@ -41,3 +41,14 @@
 // Console.log(++currentYear)
 // Console.log(--currentYear)
 // Console.log(c)
+
+// 4 Типы данных
+// const isProgrammer = true
+// const name = 'Ira'
+// const age = 19
+// let x
+// Console.log(typeof isProgrammer)
+// Console.log(typeof name)
+// Console.log(typeof age)
+// Console.log(typeof x)
+// Console.log(null)
