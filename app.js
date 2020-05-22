@@ -54,10 +54,37 @@
 // Console.log(null)
 
 // 5 Приоритет операторов
-const fullAge = 19
-const birthYear = 2020
-const currentYear = 2020
+// const fullAge = 19
+// const birthYear = 2020
+// const currentYear = 2020
 
 // > < >= <=
-const isFullAge = currentYear - birthYear >= fullAge // 19 >= 20 => true
-Console.log(isFullAge)
+// const isFullAge = currentYear - birthYear >= fullAge // 19 >= 20 => true
+// Console.log(isFullAge)
+
+// 6 Условные операторы
+// const courseStatus = 'fail' // ready, fail, pending
+//
+// if (courseStatus === 'ready') {
+//  Console.log('Курс уже готов, и его можно проходить')
+// } else if (courseStatus === 'pending') {
+//  Console.log('Курс пока находится в процессе разработки')
+// } else {
+//  Console.log('Курс не получился')
+// }
+
+// const isReady = true
+
+// if (isReady) {
+//  Console.log('Все готово!')
+// } else {
+//   Console.log('Все не готово!')
+// }
+
+// Тернарное выражение
+// isReady ? Console.log('Все готово!') : Console.log('Все не готово!')
+
+// const num1 = 42 // number
+// const num2 = '42' // string
+//
+// Console.log(num1 === num2)
