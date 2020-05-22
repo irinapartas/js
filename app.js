@@ -116,3 +116,16 @@
 // logInfoAbout('Ира', 2000)
 // logInfoAbout('Елена', 1995)
 // logInfoAbout('Елена', 2022)
+
+// 9 Массивы
+// const cars = ['Мазда', 'Мерседес', 'Форд']
+// const cars = new Array('Мазда', 'Мерседес', 'Форд')
+// console.log(cars.length)
+// console.log(cars[1])
+// console.log(cars[0])
+// console.log(cars[2])
+
+// cars[0] = 'Porsche'
+// cars[cars.length] = 'Mazda'
+// console.log(cars)
+
