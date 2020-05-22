@@ -28,6 +28,16 @@
 // console.log(parseFloat(stringFloat) + 2)
 // console.log(+stringFloat + 2)
 
-console.log(0.4 + 0.2) // 0.6
-console.log(+(0.4 + 0.2).toFixed(1))
-console.log(parseFloat((0.4 + 0.2).toFixed(1)))
+// console.log(0.4 + 0.2) // 0.6
+// console.log(+(0.4 + 0.2).toFixed(1))
+// console.log(parseFloat((0.4 + 0.2).toFixed(1)))
+
+// BigInt
+// console.log(90071992547409919999999n - 9007199254740991999999n)
+// console.log(-90071992547409919999999n)
+// console.log(90071992547409919999999.23231n) // error
+
+// console.log(10n - 4) // error
+// console.log(parseInt(10n) - 4)
+console.log(10n - BigInt(4))
+console.log(5n / 2n) // 2n
