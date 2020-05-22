@@ -88,3 +88,31 @@
 // const num2 = '42' // string
 //
 // Console.log(num1 === num2)
+
+// 7 Булевая логика
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
+
+// 8 Функции
+
+// function calculateAge(year) {
+//   return 2020 - year
+// }
+
+// console.log(calculateAge(2000))
+// console.log(calculateAge(2019))
+// console.log(calculateAge(1999))
+
+// function logInfoAbout(name, year) {
+//   const age = calculateAge(year)
+
+//   if (age > 0) {
+//     console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+//   } else {
+//     console.log('Вообще-то это уже будущее!')
+//   }
+
+// }
+
+// logInfoAbout('Ира', 2000)
+// logInfoAbout('Елена', 1995)
+// logInfoAbout('Елена', 2022)
