@@ -1,8 +1,14 @@
 // 1 Переменные
-var name = 'Ira'
-const lastName = 'Partas'
-let age = 19
+// camelCase - 2nd word with uppercase
 
-name = 'Ira'
+const firstname = 'Ira'
+const lastName = 'Partas' //string
+let age = 19 //number
+const isProgrammer = true //Boolean
 
-console.log(name)
+const private = 'private'
+const $ = 'some value'
+
+const withNum5 = '5'
+//const 5withNum5 = 5 //err
+
