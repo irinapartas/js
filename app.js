@@ -1,58 +1,70 @@
-// Event Loop
+const heading = document.getElementById('hello')
+// const heading2 = document.getElementsByTagName('h2')[0]
+// const heading2 = document.getElementsByClassName('h2-class')[0]
+// const heading2 = document.querySelector('.h2-class')
+// const heading2 = document.querySelector('#sub-hello') // Всегда 1 элемент
+const heading2 = document.querySelector('h2')
 
-// const timeout = setTimeout(() => {
-//   console.log('After timeout')
-// }, 2500)
+// const heading3 = heading2.nextElementSibling
+const h2List = document.querySelectorAll('h2')
+const heading3 = h2List[h2List.length - 1]
 
-// clearTimeout(timeout)
+setTimeout(() => {
+  addStylesTo(heading, 'JavaScript')
+}, 1500)
 
-// const interval = setInterval(() => {
-//  console.log('After timeout')
-// }, 1000)
-// clearInterval(interval)
+const link = heading3.querySelector('a')
 
-// const delay = (callback, wait = 1000) => {
-//   setTimeout(callback, wait)
-// }
+link.addEventListener('click', (event) => {
+  event.preventDefault()
+  console.log('Click on link', event.target.getAttribute('href'))
+  const url = event.target.getAttribute('href')
 
-// delay(() => {
-//   console.log('After 2 seconds')
-// }, 2000)
+  window.location = url
+})
 
 
-const delay = (wait = 1000) => {
-    const promise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        // resolve()
-        reject('Что-то пошло не так! Повторите попытку!')
-      }, wait)
-    })
-    return promise
+setTimeout(() => {
+  addStylesTo(link, 'Практикуйся', 'blue')
+}, 3000)
+
+setTimeout(() => {
+  addStylesTo(heading2, 'И все получится!', 'yellow', '2rem')
+}, 4500)
+
+function addStylesTo(node, text, color = 'red', fontSize) {
+  node.textContent = text
+  node.style.color = color
+  node.style.textAlign = 'center'
+  node.style.backgroundColor = 'black'
+  node.style.padding = '2rem'
+  node.style.display = 'block'
+  node.style.width = '100%'
+
+  // false: '', undefined, null, 0, false
+  if (fontSize) {
+    node.style.fontSize = fontSize
   }
-  
-  // delay(2500)
-  //   .then(() => {
-  //     console.log('After 2 seconds')
-  //   })
-  //   .catch(err => console.error('Error:', err))
-  //   .finally(() => console.log('Finally'))
-  
-  const getData = () => new Promise(resolve => resolve([
-    1, 1, 2, 3, 5, 8, 13
-  ]))
-  
-  // getData().then(data => console.log(data))
-  
-  async function asyncExample() {
-    try {
-      await delay(3000)
-      const data = await getData()
-      console.log('Data', data)
-    } catch (e) {
-      console.log(e)
-    } finally {
-      console.log('Finally')
-    }
+}
+
+// по ссылке
+
+heading.onclick = () => {
+  if (heading.style.color === 'red') {
+    heading.style.color = '#000'
+    heading.style.backgroundColor = '#fff'
+  } else {
+    heading.style.color = 'red'
+    heading.style.backgroundColor = '#000'
   }
-  
-  asyncExample()
+}
+
+heading2.addEventListener('dblclick', () => {
+  if (heading2.style.color === 'yellow') {
+    heading2.style.color = '#000'
+    heading2.style.backgroundColor = '#fff'
+  } else {
+    heading2.style.color = 'yellow'
+    heading2.style.backgroundColor = '#000'
+  }
+})
