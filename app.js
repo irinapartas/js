@@ -53,11 +53,32 @@ function addItemToEnd() {
 // })
 
 const pow2 = num => num ** 2
-const sqrt = num => Math.sqrt(num)
+// const sqrt = num => Math.sqrt(num)
 
-const pow2Fib = fib.map(pow2).map(Math.sqrt)
-console.log(pow2Fib)
-const pow2Fib = fib.map(pow2)
-const filteredNumbers = pow2Fib.filter(num => num > 20)
-console.log(pow2Fib)
-console.log(filteredNumbers)
+// const pow2Fib = fib.map(pow2).map(Math.sqrt)
+// console.log(pow2Fib)
+// const pow2Fib = fib.map(pow2)
+// const filteredNumbers = pow2Fib.filter(num => num > 20)
+// console.log(pow2Fib)
+// console.log(filteredNumbers)
+
+// Задача 1
+// const text = 'Привет, мы изучаем JavaScript'
+// const reverseText = text.split('').reverse().join('')
+// console.log(reverseText)
+
+const people = [
+    {name: 'Ira', budget: 4200},
+    {name: 'Masha', budget: 3500},
+    {name: 'Victoria', budget: 1700}
+  ]
+  
+  const allBudget = people
+    .filter(person => person.budget > 2000)
+    .reduce((acc, person) => {
+      acc += person.budget
+      return acc
+    }, 0)
+  
+  console.log(allBudget)
+  // const displayItems = allItems.filter(item => item.name.indexOf('phone') !== -1)
