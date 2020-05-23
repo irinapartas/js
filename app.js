@@ -24,3 +24,20 @@ const interval = setInterval(function() {
     console.log(++counter)
   }
 }, 1000)
+
+// 3 Стрелочные функции
+function greet() {
+  console.log('Привет - ')
+}
+
+const arrow = (name, age) => {
+  console.log('Привет - ', name, age)
+}
+
+const arrow2 = name => console.log('Привет - ', name)
+
+arrow2('Ira')
+
+const pow2 = num => num ** 2
+
+console.log(pow2(5))
