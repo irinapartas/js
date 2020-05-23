@@ -1,71 +1,63 @@
-// Функции
-// Function Declaration
-function greet(name) {
-  console.log('Привет - ', name)
+const cars = ['Мазда', 'Форд', 'БМВ', 'Мерседс']
+// const people = [
+//   {name: 'Ira', budget: 4200},
+//   {name: 'Masha', budget: 3500},
+//   {name: 'Victoria', budget: 1700}
+// ]
+const fib = [1, 1, 2, 3, 5, 8, 13]
+
+// Function
+function addItemToEnd() {
+
 }
 
-// Function Expression
-const greet2 = function greet2(name) {
-  console.log('Привет 2 - ', name)
-}
+// Method
+// cars.push('Рено')
+// cars.unshift('Волга')
 
-// greet('Лена')
-// greet2('Лена')
+// const firstCar = cars.shift()
+// const lastCar = cars.pop()
+// console.log(firstCar)
+// console.log(lastCar)
+// console.log(cars)
 
-// console.log(typeof greet)
-// console.dir(greet)
+// console.log(cars.reverse())
+// console.log(cars)
 
-// Анонимные функции
-let counter = 0
-const interval = setInterval(function() {
-  if (counter === 5) {
-    clearInterval(interval) // clearTimeout
-  } else {
-    console.log(++counter)
-  }
-}, 1000)
+// const index = cars.indexOf('БМВ')
+// cars[index] = 'Porsche'
+// console.log(cars)
+// let findedPerson
+// for (const person of people) {
+//   if (person.budget === 3500) {
+//     findedPerson = person
+//   }
+// }
 
-// 3 Стрелочные функции
-function greet() {
-  console.log('Привет - ')
-}
+// console.log(findedPerson)
 
-const arrow = (name, age) => {
-  console.log('Привет - ', name, age)
-}
+// const index = people.findIndex(function(person) {
+//   return person.budget === 3500
+// })
+// const person = people.find(function(person) {
+//   return person.budget === 3500
+// })
+// console.log(person)
+// const person = people.find(person => person.budget === 3500)
+// console.log(person)
 
-const arrow2 = name => console.log('Привет - ', name)
+// console.log(cars.includes('Мазда!'))
 
-arrow2('Ira')
+// const upperCaseCars = cars.map(car => {
+//   return car.toUpperCase()
+// })
 
 const pow2 = num => num ** 2
+const sqrt = num => Math.sqrt(num)
 
-console.log(pow2(5))
-
-// 4 Параметры по умолчанию
-const sum = (a = 40, b = a * 2) => a + b
-
-// console.log(sum(41, 4))
-// console.log(sum())
-
-function sumAll(...all) {
-  let result = 0
-  for (let num of all) {
-    result += num
-  }
-  return result
-}
-
-const res = sumAll(1, 2, 3, 4, 5)
-// console.log(res)
-
-// 5 Замыкания
-function createMember(name) {
-  return function(lastName) {
-    console.log(name + lastName)
-  }
-}
-
-const logWithLastName = createMember('Ira')
-console.log(logWithLastName('Partas'))
-console.log(logWithLastName('Romanova'))
+const pow2Fib = fib.map(pow2).map(Math.sqrt)
+console.log(pow2Fib)
+const pow2Fib = fib.map(pow2)
+const filteredNumbers = pow2Fib.filter(num => num > 20)
+console.log(pow2Fib)
+console.log(filteredNumbers)
